@@ -75,6 +75,11 @@ Wichtige Erkenntnisse:
 - Für den **Kompressor** war `[GT Compressor outlet air temperature (T2) [[C]]]` der signifikanteste Prädiktor.
 - Für die **Turbine** hatte `[GT Compressor outlet air pressure (P2) [[bar]]]` den größten Einfluss auf die Verschleißvorhersage.
 
+### Business Impact
+- **Kosteneinsparung**: Reduziert unnötige Wartungen durch präzise Zustandserkennung
+- **Ausfallvermeidung**: Früherkennung kritischer Verschleißzustände verhindert ungeplante Stillstände
+- **Wartungsoptimierung**: Übergang von zeitbasierter zu zustandsbasierter Instandhaltung
+
 ## Reproduzierbarkeit
 
 ### Setup
