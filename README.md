@@ -3,7 +3,7 @@
 ### Executive summary (EN)
 - Problem: Time-based maintenance causes cost and downtime.
 - Solution: Supervised regression to predict compressor/turbine degradation from 16 sensors.
-- Results: XGBoost/RandomForest reached R² of 0.9758 (compressor) and 0.9647 (turbine) on held-out test data.
+- Results: RandomForest reached R² of 0.9758 (compressor) and 0.9647 (turbine) on held-out test data.
 - Impact: Enables condition-based maintenance; top drivers: [GT Compressor outlet air temperature (T2) [[C]]], [GT Compressor outlet air pressure (P2) [[bar]]].
 - Limits: Static dataset; no temporal drift; next: uncertainty, robust validation, online data.
 
@@ -29,7 +29,7 @@ Die Kernziele sind:
 Das Projekt folgt einem klassischen Data-Science-Workflow unter Verwendung von Python und Bibliotheken wie Pandas, NumPy, Matplotlib, Seaborn und Scikit-learn. Die Kernmethoden umfassen:
 
 - **Explorative Datenanalyse (EDA)**
-- **Training und Vergleich mehrerer Regressionsmodelle** (Lineare Regression, Random Forest, XGBoost)
+- **Training und Vergleich mehrerer Regressionsmodelle** (Lineare Regression, KNeighbors, Random Forest, Decision Tree)
 - **Analyse der Merkmalswichtigkeit (Feature Importance)**, um ingenieurtechnische Einblicke zu gewinnen.
 
 ## Daten
@@ -117,7 +117,6 @@ uv sync
 │   ├── 03_baseline_model.ipynb # Baseline Modell
 │   └── 04_final_model.ipynb    # Finales Modell
 ├── src/dpp                     # Python Module
-├── test/                       # Unit Tests
 └── pyproject.toml              # Projektkonfiguration
 ```
 
